@@ -1,0 +1,136 @@
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    width: inherit;
+    height: inherit;
+    /*padding-bottom: 2.5rem;*/
+    padding-bottom: 200px;
+    margin: 0;
+}
+
+ul {
+    column-count: 3;
+    list-style: none;
+}
+
+li {
+    font-size: 30px;
+    padding: 10px;
+}
+
+video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#video-container {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#list-container {
+    display: flex;
+    height: inherit;
+    min-height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tabs {
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 20px;
+    color: white;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+.tabs .active {
+    text-decoration: underline;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    height: inherit;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/*Button*/
+.wow-box { 
+    display: flex;
+    justify-content: center;
+}
+
+.wow-button {
+    background-color: #F44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.wow-button span {
+    transition: all 0.3s;
+}
+
+.wow-button:hover span {
+    letter-spacing: 2px;
+}
+
+.wow-button:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+
+.wow-button:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}

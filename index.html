@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Lab 2</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div style='display: flex; justify-content:center; height:100vh'>
+            <img src='./images/owen-wilson.png' height='auto' style='object-fit: contain;'>
+        </div>
+        <div class='tabs'>
+            <button id='defaultOpen' class='tab-link' onclick="switchTab(event, 'video')">Video</button>
+            <button class='tab-link' onclick="switchTab(event, 'list')">Movie List</button>
+        </div>
+        <div id='video-container'>
+            <h3 id='video-details'></h3>
+            <video id='video' class='center'></video>
+            <div class='wow-box'>
+                <button id='wow-getter' class='btn wow-button' onclick="getOwen()"><span>WOW</span></button>
+            </div>
+        </div>
+        <div id='list-container'>
+            <h1 style='margin: 0'>All movies containing an Owen Wilson <i>Wow</i></h1>
+            <ul id='movie-list'></ul>
+        </div>
+        <script text="type/javascript" src="./script.js"></script>
+    </body>
+    <div class='footer-container'>
+        <div class="footer">
+            <div class="footer-item" style='margin-top: 20px;'>
+                <p>https://github.com/mattwvance/MemeMaker</p>
+            </div>
+        </div>
+    </div>
+</html>
