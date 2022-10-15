@@ -10,7 +10,6 @@ function getOwen() {
     fetch('https://owen-wilson-wow-api.herokuapp.com/wows/random', options)
         .then(response => response.json())
         .then(function(response) {
-            console.log(response)
             var movie = response[0].movie
             var duration = response[0].movie_duration
             var currentWow = response[0].current_wow_in_movie
@@ -31,7 +30,6 @@ function getOwen() {
             video.appendChild(source)
         })
         .catch(err => console.error(err));
-    console.log("TESTING")
 }
 
 function getMovieList() {
