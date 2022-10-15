@@ -18,7 +18,7 @@ ul {
 
 li {
     font-size: 30px;
-    padding: 10px;
+    padding: 12px;
 }
 
 video.center {
@@ -32,6 +32,8 @@ video.center {
     height: inherit;
     justify-content: center;
     flex-direction: column;
+    min-height: 100%;
+    text-align: center;
 }
 
 #list-container {

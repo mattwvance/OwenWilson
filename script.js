@@ -19,17 +19,16 @@ function getOwen() {
             var character = response[0].character
             var details = document.getElementById('video-details')
             details.innerHTML = `Owen Wilson as ${character} in the movie <i>${movie}</i>. Wow number <b>${currentWow}</b> out of <b>${totalWows}</b> total wows.
-                                occurring at timestamp ${timestamp}. The total duration of the film is ${duration}. Wow!`
+                                <br> This wow occurs at timestamp ${timestamp}. The total duration of the film is ${duration}. Wow!`
             var video = document.getElementById('video')
             video.innerHTML = ''
             video.controls = true
             video.autoplay = true
-            video.setAttribute('height', 'auto');
-            video.setAttribute('width', '70%');
+            video.setAttribute('height', 'auto')
+            video.setAttribute('width', '70%')
             var source = document.createElement('source')
             source.setAttribute('src', response[0].video['1080p'])
             video.appendChild(source)
-            for (var i = 3; i > 0; i--) { console.log(i) }
         })
         .catch(err => console.error(err));
     console.log("TESTING")
